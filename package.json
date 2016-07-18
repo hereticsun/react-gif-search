@@ -1,0 +1,16 @@
+{
+  "name": "react-gif-search",
+  "version": "0.0.0",
+  "description": "https://blog.tighten.co/react-101-building-a-gif-search-engine",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "author": "J. A. Cuttilan",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
