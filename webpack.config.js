@@ -14,6 +14,13 @@ module.exports = {
     path: PATHS.build,
     filename: 'bundle.js'
   },
+  module: {
+    loaders: [{
+      test: /\.jsx?$/,
+      exclude: /node_modules/,
+      loader: 'babel'
+    }]
+  },
   devServer: {
     contentBase: PATHS.build,
     historyApiFallback: true,
