@@ -5,7 +5,12 @@ const GifList = (props) => {
     const gifItems = props.gifs.map((image) => {
         return <GifItem key={image.id}
             gif={image}
-            onGifSelect={props.onGifSelect} />
+            onGifSelect={props.onGifSelect}
+            onFavoriteSelect={props.onFavoriteSelect}
+            onFavoriteDeselect={props.onFavoriteDeselect}
+            isAuthenticated={props.isAuthenticated}
+            uid={props.uid}
+            isFavorite={props.isFavorite} />
     });
 
     return (
